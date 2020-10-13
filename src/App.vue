@@ -1,10 +1,12 @@
 <template>
   <v-app>
-    <v-app-bar app color="blue" dense dark >
-  
+    <v-app-bar app color="blue" dense dark shrink-on-scroll src="https://picsum.photos/id/104/1920/1080?random" scroll-target="#scrolling-techniques-2">
+      <v-toolbar-title>UiBank Bank</v-toolbar-title>
       <v-btn to="/Quotes" class="ma-3">Loan Quotes</v-btn>
       <v-btn to="/Accounts" class="ma-3">Accounts</v-btn>
+      <v-
       <v-spacer></v-spacer>
+
       <div v-if="!this.$store.state.loggedIn">
       <v-btn to="/Register" class="ma-3">Register</v-btn>
       <v-btn to="/Login" >Login</v-btn>

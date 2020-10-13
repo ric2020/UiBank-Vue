@@ -5,7 +5,7 @@
         <v-toolbar dark color="primary">
           <v-toolbar-title>Login</v-toolbar-title>
         </v-toolbar>
-        <v-form v-if="!showResponse">
+        <v-form v-if="!showResponse" @submit.prevent="login">
           <v-layout>
             <v-flex sm8 offset-sm2>
               <v-text-field v-model="user.username" label="UserName" type="text" required></v-text-field>

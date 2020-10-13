@@ -61,6 +61,7 @@ export default {
     },
     async updateQuote(quote) {
       await this.$store.dispatch("updateQuote", this.$store.state.quotes[0]);
+      this.$router.push("/");
     }
   },
   };

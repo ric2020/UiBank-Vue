@@ -63,13 +63,13 @@ export default new Vuex.Store({
 
         //Quotes
         async getQuotes({ commit }) {
-            commit('updateQuotes', (await axios.get("https://uibank-api.azurewebsites.net/api/quotes")).data);
+            commit('updateQuotes', (await axios.get("https://uibank-api.azurewebsites.net/api/quotes?filter[order]=date%20DESC&filter[limit]=20")).data);
         },
         async newQuote({ commmit }, quote) {
             //post new quote
             let res = (await axios.post("https://uibank-api.azurewebsites.net/api/quotes/newquote/", querystring.stringify(quote)));
 
-            this.commit('updateQuotes', (await axios.get("https://uibank-api.azurewebsites.net/api/quotes")).data);
+            this.commit('updateQuotes', (await axios.get("https://uibank-api.azurewebsites.net/api/quotes?filter[order]=date%20DESC&filter[limit]=20")).data);
 
             return res.data;
         },
@@ -78,7 +78,7 @@ export default new Vuex.Store({
         },
         async deleteQuote({ commit }, id) {
             let res = (await axios.delete('https://uibank-api.azurewebsites.net/api/quotes/' + id)).data
-            commit('updateQuotes', (await axios.get("https://uibank-api.azurewebsites.net/api/quotes")).data);
+            commit('updateQuotes', (await axios.get("https://uibank-api.azurewebsites.net/api/quotes?filter[order]=date%20DESC&filter[limit]=20")).data);
         },
         async updateQuote({ commit }, quote) {
             let res = (await axios.post("https://uibank-api.azurewebsites.net/api/quotes/" + quote.id + "/replace", querystring.stringify(quote)));
@@ -139,7 +139,7 @@ export default new Vuex.Store({
             }
             else {
                 console.log("failed login");
-                this.commit('loggedIn', false)
+                this.commit('loggedIn', false);
             }
 
             return response;
