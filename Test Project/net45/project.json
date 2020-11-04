@@ -1,0 +1,162 @@
+{
+  "name": "UiBankITAutomation",
+  "description": "Test Automation Project",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.System.Activities": "[20.10.1]",
+    "UiPath.Testing.Activities": "[1.2.4]",
+    "UiPath.UIAutomation.Activities": "[20.10.5]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.10.0.0",
+  "projectVersion": "1.0.57076477",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "37468599-f0cf-4245-98b5-18fa3c1bbbd1",
+        "fileName": "TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ac7952ce-82dc-41de-b7a8-0c8f5052ee33",
+        "fileName": "TestCases\\Login\\No login with invalid credentials.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "af7229ec-2f78-45d6-b534-f92e61a18922",
+        "fileName": "TestCases\\Login\\No login with email missing.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7ae652dd-6b6f-4d25-9c42-e361a67fc1e4",
+        "fileName": "TestCases\\Login\\No login with password missing.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9c8d36c5-f1bc-4c14-9c01-903a725c59a0",
+        "fileName": "TestCases\\Login\\Login successfully.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9237d576-a4ff-483a-b6a4-3da02d87f51c",
+        "fileName": "TestCases\\Quotes\\New quote with valid values is successfully.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "75f98600-8c9a-4949-8696-4ebc53de3f1a",
+        "dataVariationFilePath": ".variations\\Quote variation_Sheet1.json",
+        "fileName": "TestCases\\Quotes\\Calculator\\New quote rate calculator verification.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "300564e3-4a15-41fb-8674-f0bafab33008",
+        "fileName": "TestCases\\Quotes\\New quote shows up in quotes list.xaml"
+      }
+    ],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "TestCases\\Login\\No login with invalid credentials.xaml",
+      "uniqueId": "ac7952ce-82dc-41de-b7a8-0c8f5052ee33",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "TestCases\\Login\\No login with email missing.xaml",
+      "uniqueId": "af7229ec-2f78-45d6-b534-f92e61a18922",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "TestCases\\Login\\No login with password missing.xaml",
+      "uniqueId": "7ae652dd-6b6f-4d25-9c42-e361a67fc1e4",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "TestCases\\Login\\Login successfully.xaml",
+      "uniqueId": "9c8d36c5-f1bc-4c14-9c01-903a725c59a0",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "TestCases\\Quotes\\New quote with valid values is successfully.xaml",
+      "uniqueId": "9237d576-a4ff-483a-b6a4-3da02d87f51c",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "TestCases\\Quotes\\Calculator\\New quote rate calculator verification.xaml",
+      "uniqueId": "75f98600-8c9a-4949-8696-4ebc53de3f1a",
+      "input": [
+        {
+          "name": "Amount",
+          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "Term",
+          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "Income",
+          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "Age",
+          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "required": false,
+          "hasDefault": true
+        },
+        {
+          "name": "Expected",
+          "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+          "required": false,
+          "hasDefault": true
+        }
+      ],
+      "output": []
+    },
+    {
+      "filePath": "TestCases\\Quotes\\New quote shows up in quotes list.xaml",
+      "uniqueId": "300564e3-4a15-41fb-8674-f0bafab33008",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {}
+}
